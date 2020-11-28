@@ -15,7 +15,10 @@ const BookItem = ({ book }) => {
         <div className='card-content'>
           <span
             className='card-title activator grey-text text-darken-4 s11'
-            style={{ fontSize: '12px' }}
+            style={{
+              fontSize: '12px',
+              fontWeight: 'bold',
+            }}
           >
             {book.title}
           </span>
