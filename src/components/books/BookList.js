@@ -4,7 +4,6 @@ import BookItem from './BookItem';
 import Loading from '../../layout/Loading';
 
 const BookList = ({ books, loading }) => {
-  console.log(books);
   if (loading) {
     return <Loading />;
   } else {
