@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
-const App = () => {
-  return (
-    <div className="App">
-        
-    </div>
-  )
-}
+import getBooks from './api/GetBooks';
 
-export default App
+import Navbar from './layout/Navbar';
+
+const App = () => {
+  useEffect(() => {
+    getBooks();
+  }, []);
+
+  return (
+    <div className='App'>
+      <Navbar />
+      <div className='container'>
+        <h1>Test</h1>
+      </div>
+    </div>
+  );
+};
+
+export default App;
