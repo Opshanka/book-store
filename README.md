@@ -2,12 +2,12 @@
 
 https://opshanka.github.io/book-store
 
-# To run the app locally
+# To run the app in dev environment
 
 1. First clone the repo
 2. Navigate to the project folder
-3. Run `npm install `
-4. To run the app run `npm start `
+3. To get the dependencies: `npm install `
+4. To Start the server: `npm start `
 
 # Screenshots
 
