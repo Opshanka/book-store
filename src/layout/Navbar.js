@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
   return (
     <nav>
-      <div className='nav-wrapper'>
+      <div className='nav-wrapper blue'>
         <a href='!#' className='brand-logo center'>
           Book Store
         </a>
@@ -11,5 +11,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
