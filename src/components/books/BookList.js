@@ -1,9 +1,25 @@
 import React from 'react';
 
-const BookList = ({ books }) => {
-  console.log(books);
+import BookItem from './BookItem';
+import Loading from '../../layout/Loading';
 
-  return <div></div>;
+const BookList = ({ books, loading }) => {
+  console.log(books);
+  if (loading) {
+    return <Loading />;
+  } else {
+    return (
+      <div className='row'>
+        {books == null ? (
+          <p>No books to show</p>
+        ) : (
+          books.map((book) => (
+            <BookItem book={book} key={book.primary_isbn10} />
+          ))
+        )}
+      </div>
+    );
+  }
 };
 
 export default BookList;
