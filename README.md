@@ -6,8 +6,8 @@ https://opshanka.github.io/book-store
 
 1. First clone the repo
 2. Navigate to the project folder
-3. Run `bash npm install `
-4. To run the app run `bash npm start `
+3. Run `npm install `
+4. To run the app run `npm start `
 
 # Screenshots
 
